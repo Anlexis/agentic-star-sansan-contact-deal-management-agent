@@ -1,0 +1,10 @@
+# Runtime parameters — loaded by AgentRegistry, passed as Graph(config=...).
+# Separate from config/agent.yaml (the static manifest).
+
+max_retry: 3
+timeout_s: 30
+
+# Sansan REST API connector settings - forwarded to the inner workflow
+# graph by SansanWorkflowGraphNode._parent_config().
+sansan:
+  base_url: "https://api.sansan.com/v3"
